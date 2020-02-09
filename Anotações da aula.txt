@@ -1,0 +1,51 @@
+display: flex -> significa que os itens, que são os filhos da tag ficarão um do lado do outro
+flex-wrap: wrap -> significa que quando a tela ficar pequena, os itens filho ficarão um
+embaixo do outro
+justify-content: space-between -> alinhar os filhos de tal forma que um fica em uma 
+extremidade da tela e o outro filho na outra
+
+img {
+  img-width: 100%  -> quero que minha imagem aumente no máximo 100% do container
+}
+
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.flex > div {
+	flex: 1 1 200px;
+}
+primeira posição: quero que o flex se expanda
+Segunda posição: quero que o flex possa ficar menor
+terceira posição: o flex deve ter 200px, se não conseguir ter 200px, então o flex
+quebrará
+flex-wrap: wrap	-> com essa propriedade, indico para o flex que ele pode quebrar,
+assim o flex > div irá funcionar, caso contrário não
+
+
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 800px; -> estou limitando meu container para que ele tenha no máximo
+	800 pixels de largura
+	margin: 0 auto; -> alinhar os itens ao centro para quando passar dos 800 pixels
+}
+
+.flex > div {
+	flex: 1 1 200px;
+	margin: 10px; cada div dentro do flex terá uma margen de 10px
+}
+
+
+.grid1 > div:nth-child(n + 5) {
+	background-color: blue;
+}
+a partir do 5 filho do grid, deixe-os com a cor azul
+
+O "@media" vc usa quando quiser deixar algo responsivo
+
+
+
+
+
